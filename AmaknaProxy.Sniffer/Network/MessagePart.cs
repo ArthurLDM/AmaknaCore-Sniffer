@@ -94,7 +94,7 @@ namespace AmaknaProxy.API.Network
 
             if (reader.BytesAvailable >= 2 && !Header.HasValue)
             {
-                Header = reader.ReadShort();
+                Header = reader.ReadUShort();
 
                 if(isClient)
                 {
